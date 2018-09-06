@@ -91,7 +91,22 @@ class BidSummary extends Definition {
     /**
      * Why bid failed
      *
-     * Enum: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+     * Enum:
+     *     0 NotSet
+     *     1 AvailableAmountLowerThanMinInvestmentLimit
+     *     2 BiddingOnOwnAuction
+     *     3 BiddingOnInactiveDuplicate
+     *     4 BiddingAmountTooSmall
+     *     5 NotEnoughBalance
+     *     6 AuctionIsClosed
+     *     7 AuctionStatusNotOpen
+     *     8 AuctionNoRiskScore
+     *     9 AuctionAlreadyFullyBidded
+     *     10 AuctionNotFound
+     *     11 AuctionNotEnoughLoanAmountForBidding
+     *     12 AuctionCannotBuyWholeLoan
+     *     13 AuctionIsCancelled
+     *     14 Unknown
      *
      * @var int
      */
